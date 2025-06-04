@@ -13,7 +13,7 @@ function calculate() {
     const val2 = parseFloat(val2Input.value);
     const operator = operatorSelect.value;
 
-    if (input(val1) || input(val2)) {
+    if (isNaN(val1) || isNaN(val2)) {
         formulaArea.textContent = "計算式:";
         resultArea.textContent = "両方の数値を入力してください";
         return;
